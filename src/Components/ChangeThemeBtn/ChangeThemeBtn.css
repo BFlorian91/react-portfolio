@@ -1,12 +1,26 @@
 .btn {
   height: 50px;
   width: 50px;
-  background: #FFD07F;
   border: none;
   border-radius: 20px;
   cursor: pointer;
+  transition: ease 0.4s;
+}
+
+.btn.light {
+  background: #ffd07f;
+  transition: ease-in-out 0.2s;
+}
+
+.btn.dark {
+  background: #916bbf;
+  transition: ease-in-out 0.2s;
 }
 
 .btn img {
   cursor: pointer;
+}
+
+.btn:hover {
+  transform: translateY(-5px);
 }

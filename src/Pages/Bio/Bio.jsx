@@ -4,7 +4,9 @@ import './Bio.css'
 
 export default function Bio() {
   return (
-    <div className='bio-container'>
+    <div
+      className='bio-container'
+    >
       <h3>Bio</h3>
       <hr />
       <div className='ligne ligne-1'>

@@ -1,12 +1,14 @@
 import React from 'react';
+
 import WelcomeToast from '../WelcomeToast/WelcomeToast';
 
 import me from './me.jpg';
 import './QuickMe.css';
 
 export default function QuickMe() {
+
   return (
-    <div className='container-quickme'>
+    <div className="container-quickme">
       <div className='top-image'></div>
       <div className='my-self'>
         <div className='toast'>

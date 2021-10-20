@@ -1,8 +1,9 @@
-import React from 'react'
+import React from 'react';
 
-import './Work.css'
+import './Work.css';
 
 export default function Work() {
+
   return (
     <div className='work-container'>
       <h3>Work</h3>

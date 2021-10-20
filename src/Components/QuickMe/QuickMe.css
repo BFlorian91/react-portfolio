@@ -40,3 +40,17 @@
   border-radius: 50%;
 }
 
+.lightmode {
+  color: #212121;
+}
+
+.quick-desc .darkmode {
+  color: whitesmoke;
+  background: #1f1d21;
+}
+
+.quick-desc .lightmode {
+  background: #f9e4c8;
+  color: #212121;
+}
+

@@ -2,8 +2,49 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  background: rgba(700, 700, 700, 0.03);
+
   width: 640px;
   height: 50px;
   border-radius: 8px;
+  /* overflow: hidden;
+  position: relative; */
 }
+
+.toast.darkmode {
+  background: rgba(40, 40, 45, 1);
+}
+
+.toast.lightmode {
+  background: #F6F0E8;
+}
+
+.toast p {
+  position: relative;
+  z-index: 1;
+}
+
+/* .toast::before {
+  content: '';
+  position: absolute;
+  width: 640px;
+  height: 50px;
+  background-color: #bb4f5d;
+  animation: animate 4s linear infinite;
+}
+
+.toast::after {
+  content: '';
+  position: absolute;
+  background: rgba(40, 40, 45, 1);
+  border-radius: 8px;
+  inset: 2px;
+}
+
+@keyframes animate {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+} */

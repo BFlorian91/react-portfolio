@@ -3,3 +3,11 @@ nav {
   justify-content: space-around;
   width: 8em;
 }
+
+a.lightmode {
+  color: #212121;
+}
+
+a.darkmode {
+  color: whitesmoke;
+}

@@ -1,21 +1,33 @@
-import React, { useState } from 'react'
+import React, { useContext } from 'react';
 
-import sun from './icons8-soleil.svg'
-import moon from './moon.svg'
+import { ThemeContext } from '../../Context/ThemeContext';
 
-import './ChangeThemeBtn.css'
+import sun from './icons8-soleil.svg';
+import moon from './moon.svg';
+
+import './ChangeThemeBtn.css';
 
 export default function ChangeThemeBtn() {
 
-  const [isDark, setIsDark] = useState(true)
+ const { theme, dispatch } = useContext(ThemeContext)
+
+  const toggleTheme = () => {
+     theme.darkmode
+      ? dispatch({ type: 'LIGHTMODE' })
+      : dispatch({ type: 'DARKMODE' })
+  }
 
   return (
     <div>
-      {
-        isDark 
-        ? <button className="btn light"><img src={sun} alt="dark theme icon" /></button>
-        : <button className="btn dark"><img src={moon} alt="" /></button>
-      }
+      {theme.darkmode ? (
+        <button onClick={toggleTheme} className='btn light'>
+          <img src={sun} alt='light theme' />
+        </button>
+      ) : (
+        <button onClick={toggleTheme} className='btn dark'>
+          <img width='25' src={moon} alt='dark theme' />
+        </button>
+      )}
     </div>
-  )
+  );
 }
