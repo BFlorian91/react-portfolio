@@ -1,0 +1,42 @@
+.container-quickme {
+  display: flex;
+  justify-content: space-between;
+}
+
+.top-image {
+  height: 150px;
+}
+
+.my-self {
+  display: flex;
+  flex-direction: column;
+}
+
+.toast {
+  margin: 15px 0;
+}
+
+.my-self .contents {
+  display: flex;
+  justify-content: space-between;
+
+}
+
+.quick-desc p {
+  font-size: 14px;
+}
+
+.pp-container {
+  width: 105px;
+  height: 105px;
+  border: 1px solid whitesmoke;
+  border-radius: 50%;
+
+}
+
+.pp-image {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+}
+
