@@ -9,17 +9,17 @@ import './ChangeThemeBtn.css';
 
 export default function ChangeThemeBtn() {
 
- const { theme, dispatch } = useContext(ThemeContext)
+ const { themePreference, dispatch } = useContext(ThemeContext)
 
   const toggleTheme = () => {
-     theme.darkmode
+     themePreference.darkmode
       ? dispatch({ type: 'LIGHTMODE' })
       : dispatch({ type: 'DARKMODE' })
   }
 
   return (
     <div>
-      {theme.darkmode ? (
+      {themePreference.darkmode ? (
         <button onClick={toggleTheme} className='btn light'>
           <img src={sun} alt='light theme' />
         </button>

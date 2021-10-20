@@ -1,19 +1,22 @@
 import React, { useContext } from 'react';
+import { Link } from 'react-router-dom';
+
 import { ThemeContext } from '../../Context/ThemeContext';
+
 
 import './Navbar.css';
 
 export default function Navbar() {
-  const { theme } = useContext(ThemeContext);
+  const { themePreference } = useContext(ThemeContext);
 
   return (
     <nav>
-      <a className={theme.darkmode ? 'darkmode' : 'lightmode'} href='/work'>
+      <Link className={themePreference.darkmode ? 'darkmode' : 'lightmode'} to='/work'>
         Works
-      </a>
-      <a className={theme.darkmode ? 'darkmode' : 'lightmode'} href='/post'>
+      </Link>
+      <Link className={themePreference.darkmode ? 'darkmode' : 'lightmode'} to='/post'>
         Posts
-      </a>
+      </Link>
     </nav>
   );
 }

@@ -9,7 +9,6 @@
   /* color: whitesmoke; */
 }
 
-
 body {
   font-family: -apple-system, BlinkMacSystemFont, 'Roboto', 'Oxygen', 'Ubuntu',
     'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue', sans-serif;
@@ -17,10 +16,17 @@ body {
   -moz-osx-font-smoothing: grayscale;
 }
 
+a.lightmode {
+  color: #212121;
+}
+
+a.darkmode {
+  color: whitesmoke;
+}
+
 .app {
   display: flex;
   justify-content: center;
-  transition: all 0.2s ease-in-out;
   background-color: #1f1d21;
   color: whitesmoke;
 }
@@ -61,14 +67,6 @@ body {
   z-index: 2;
 }
 
-/* .header.lightmode {
-  background: #F6F0E8;
-}
-
-.header.app.darkmode {
-  background: #1f1d21;
-} */
-
 .header.active {
   -webkit-backdrop-filter: blur(4px);
   backdrop-filter: blur(4px);
@@ -87,6 +85,7 @@ body {
 
 main {
   width: 100%;
+  height: 100vh;
   max-width: 640px;
 }
 

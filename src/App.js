@@ -1,49 +1,33 @@
-import React, { useContext, useState } from 'react';
+import React, { useContext } from 'react';
+import { Switch, Route } from 'react-router-dom';
 
-import Navbar from './Components/Navbar/Navbar';
-import ChangeThemeBtn from './Components/ChangeThemeBtn/ChangeThemeBtn';
-import QuickMe from './Components/QuickMe/QuickMe';
-import Work from './Pages/Work/Work';
-import Bio from './Pages/Bio/Bio';
-import Hobbies from './Pages/Hobbies/Hobbies';
-import Sociaux from './Pages/Sociaux/Sociaux';
 import ParticlesCustom from './Components/Particles/Particles';
 import { ThemeContext } from './Context/ThemeContext';
+import Home from './Pages/Home/Home';
+import Header from './Components/Header/Header';
+import Works from './Pages/Works/Works';
+import Posts from './Pages/Posts/Posts';
 
 
 import './App.css';
 
 
 function App() {
-  const [navBlur, setNavBlur] = useState(false)
-
-  const { theme } = useContext(ThemeContext)
-
-  const blurNavbar = () => {
-    window.scrollY >= 30 ? setNavBlur(true) : setNavBlur(false)
-  }
-
-  window.addEventListener('scroll', blurNavbar)
+  const { themePreference } = useContext(ThemeContext)
 
   return (
-    <div id="app" className={theme.darkmode ? "app darkmode" : "app lightmode"}>
+    <div className={themePreference.darkmode ? "app darkmode" : "app lightmode"}>
       <div className='particles'>
         <ParticlesCustom />
       </div>
       <div className="global-container">
-        <header className={navBlur ? "header active" : "header"}>
-          <div className="left-part">
-            <p>Florian Beaumont</p>
-            <Navbar />
-          </div>
-          <ChangeThemeBtn />
-        </header>
+        <Header />
         <main>
-          <QuickMe />
-          <Work />
-          <Bio />
-          <Hobbies />
-          <Sociaux />
+          <Switch>
+            <Route exact path="/" component={Home} />
+            <Route exact path="/works" component={Works} />
+            <Route exact path="/posts" component={Posts} />
+          </Switch>
         </main>
         <footer>© 2021 Beaumont Florian. All Rights Reserved.</footer>
       </div>

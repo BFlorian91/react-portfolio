@@ -1,14 +1,18 @@
-import React from 'react'
+import React, { useContext } from 'react';
 import Particles from 'react-tsparticles';
+import { ThemeContext } from '../../Context/ThemeContext';
+
+import './Particles.css';
 
 export default function ParticlesCustom() {
-    const particlesInit = main => {
-      // console.log(main);
-    };
+  const { themePreference } = useContext(ThemeContext);
+  const particlesInit = main => {
+    // console.log(main);
+  };
 
-    const particlesLoaded = container => {
-      // console.log(container);
-    };
+  const particlesLoaded = container => {
+    // console.log(container);
+  };
   return (
     <>
       <Particles
@@ -48,13 +52,13 @@ export default function ParticlesCustom() {
           },
           particles: {
             color: {
-              value: '#ffffff',
+              value: themePreference.darkmode ? '#ffffff' : '#222222',
             },
             links: {
-              color: '#ffffff',
+              color: themePreference.darkmode ? '#ffffff' : '#222222',
               distance: 150,
               enable: true,
-              opacity: 0.1,
+              opacity: themePreference.darkmode ? 0.095 : 0.08,
               width: 1,
             },
             collisions: {
@@ -76,7 +80,7 @@ export default function ParticlesCustom() {
               value: 40,
             },
             opacity: {
-              value: 0.5,
+              value: themePreference.darkmode ? 0.095 : 0.08,
             },
             shape: {
               type: 'circle',
