@@ -22,13 +22,13 @@ export default function Sociaux() {
         </div>
       </a>
       <a
-        href='https://www.instagram.com/fb_visual/'
+        href='https://www.instagram.com/fb_visuals/'
         target='_blank'
         rel='noreferrer'
       >
         <div className='ligne'>
           <img width='22' src={insta} alt='instagram' />
-          <p>@fb_visual</p>
+          <p>@fb_visuals</p>
         </div>
       </a>
       <a href='https://github.com/BFlorian91' target='_blank' rel='noreferrer'>
