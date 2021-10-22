@@ -3,6 +3,7 @@ import { Switch, Route } from 'react-router-dom';
 
 import ParticlesCustom from './Components/Particles/Particles';
 import { ThemeContext } from './Context/ThemeContext';
+import Workscase from './Pages/Workscase/Workscase';
 import Home from './Pages/Home/Home';
 import Header from './Components/Header/Header';
 import Works from './Pages/Works/Works';
@@ -26,6 +27,7 @@ function App() {
           <Switch>
             <Route exact path="/" component={Home} />
             <Route exact path="/works" component={Works} />
+            <Route exact path="/works/:id" component={Workscase} />
             <Route exact path="/posts" component={Posts} />
           </Switch>
         </main>

@@ -1,0 +1,72 @@
+.workscase-container {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: space-evenly;
+  /* grid-template-columns: 1fr;
+  grid-template-rows: 50px, 150px, auto, 1fr;
+  grid-template-areas: 
+  "nav" 
+  "desc"
+  "stacks"
+  "img"; */
+}
+
+.darkmode-pink {
+  color: #E45AB0;
+}
+
+.lightmode-blue {
+  color: #87A5E7;
+}
+
+.description {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.stacks {
+  height: 5em;
+  display: flex;
+  flex-direction: column;
+  align-items: space-evenly;
+  justify-content: space-around;
+}
+
+.stacks a {
+  color: #E45AB0;
+  padding-left: .5em;
+  cursor: pointer;
+}
+
+.stacks .badges {
+  color: #99E5B4;
+  background: #34403B;
+  padding: .3em;
+  border-radius: 5px;
+}
+
+.stacks .contents {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.stacks .contents p {
+  padding-left: 1em;
+}
+
+.workscase-img {
+  width: 100%;
+  height: 300px;
+  border-radius: 20px;
+  background: red;
+  overflow: hidden;
+}
+
+.workscase-img img {
+  width: 100%;
+}

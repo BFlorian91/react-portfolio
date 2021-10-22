@@ -1,0 +1,24 @@
+{
+  "posts": [
+    {
+      "id": 1,
+      "title": "Remove array duplicates",
+      "urlPost": "https://fbdevelop.netlify.app/remove-duplicate-element-js/"
+    },
+    {
+      "id": 1,
+      "title": "Hook: useContext",
+      "urlPost": "https://fbdevelop.netlify.app/remove-duplicate-element-js/"
+    },
+    {
+      "id": 1,
+      "title": "Sort, Split, Join Array",
+      "urlPost": "https://fbdevelop.netlify.app/remove-duplicate-element-js/"
+    },
+    {
+      "id": 1,
+      "title": "Redux",
+      "urlPost": "https://fbdevelop.netlify.app/remove-duplicate-element-js/"
+    }
+  ]
+}

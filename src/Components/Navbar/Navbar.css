@@ -4,10 +4,16 @@ nav {
   width: 8em;
 }
 
+.is-active {
+  color: #BB4F5D !important;
+}
+
 a.lightmode {
   color: #212121;
+  cursor: pointer;
 }
 
 a.darkmode {
   color: whitesmoke;
+  cursor: pointer;
 }

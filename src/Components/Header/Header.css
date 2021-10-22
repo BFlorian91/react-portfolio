@@ -1,0 +1,27 @@
+.left-part {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 18em;
+}
+
+.left-part p {
+  cursor: pointer;
+  font-weight: bold;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  min-width: 100%;
+  padding: 20px;
+  position: sticky;
+  top: 0;
+  z-index: 2;
+}
+
+.header.active {
+  -webkit-backdrop-filter: blur(4px);
+  backdrop-filter: blur(4px);
+}

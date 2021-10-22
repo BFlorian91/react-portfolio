@@ -5,6 +5,8 @@ import { ThemeContext } from '../../Context/ThemeContext';
 import Navbar from '../Navbar/Navbar';
 import ChangeThemeBtn from '../ChangeThemeBtn/ChangeThemeBtn';
 
+import './Header.css'
+
 export default function Header() {
   const [navBlur, setNavBlur] = useState(false);
   
