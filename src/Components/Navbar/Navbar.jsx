@@ -11,7 +11,11 @@ export default function Navbar() {
   return (
     <nav>
       <NavLink
-        activeClassName='is-active'
+        activeClassName={
+          themePreference.darkmode
+            ? 'is-active darkmode'
+            : 'is-active lightmode'
+        }
         className={
           themePreference.darkmode
             ? 'navbar-link darkmode'

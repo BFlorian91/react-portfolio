@@ -5,13 +5,20 @@
   margin: 0 0 40px 0;
 }
 
-.hobbies-container hr {
+.hobbies-container .separator {
   width: 70px;
   height: 5px;
-  background: rgba(900, 900, 900, 0.15);
   border: none;
   border-radius: 1px;
   margin: 5px 0 10px 0;
+}
+
+.separator.darkmode {
+  background: rgba(900, 900, 900, 0.15);
+}
+
+.separator.lightmode {
+  background: rgba(50, 50, 50, 0.30);;
 }
 
 .hobbies-container p {

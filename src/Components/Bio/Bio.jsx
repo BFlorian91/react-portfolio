@@ -1,14 +1,18 @@
-import React from 'react'
+import React, { useContext } from 'react'
+
+import { ThemeContext } from '../../Context/ThemeContext'
 
 import './Bio.css'
 
 export default function Bio() {
+  const { themePreference } = useContext(ThemeContext)
+
   return (
     <div
       className='bio-container'
     >
       <h3>Bio</h3>
-      <hr />
+      <hr className={themePreference.darktheme ? 'separator darkmode' : 'separator lightmode'} />
       <div className='ligne ligne-1'>
         <p>
           <span>1991</span>Born near Paris, France.

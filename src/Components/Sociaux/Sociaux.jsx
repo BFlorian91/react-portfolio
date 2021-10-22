@@ -1,4 +1,6 @@
-import React from 'react';
+import React, { useContext } from 'react';
+
+import { ThemeContext } from '../../Context/ThemeContext';
 
 import insta from './insta.svg';
 import github from './github.svg';
@@ -7,10 +9,17 @@ import linkedin from './linkedin.svg';
 import './Sociaux.css';
 
 export default function Sociaux() {
+  const { themePreference } = useContext(ThemeContext);
   return (
     <div className='sociaux-container'>
       <h3>On the web</h3>
-      <hr />
+      <hr
+        className={
+          themePreference.darkmode
+            ? 'separator darkmode'
+            : 'separator lightmode'
+        }
+      />
       <a
         href='https://www.instagram.com/fb_develop/'
         target='_blank'

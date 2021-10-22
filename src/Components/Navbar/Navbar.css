@@ -4,8 +4,12 @@ nav {
   width: 8em;
 }
 
-.is-active {
-  color: #BB4F5D !important;
+.is-active.darkmode {
+  color: #E45AB0 !important;
+}
+
+.is-active.lightmode {
+  color: #87A5E7 !important;
 }
 
 a.lightmode {

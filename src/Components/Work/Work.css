@@ -4,13 +4,20 @@
   flex-direction: column;
 }
 
-.work-container hr {
+.work-container .separator {
   width: 40px;
   height: 5px;
-  background: rgba(900, 900, 900, 0.15);
   border: none;
   border-radius: 1px;
   margin: 5px 0 10px 0;
+}
+
+.separator.darkmode {
+  background: rgba(900, 900, 900, 0.15);
+}
+
+.separator.lightmode {
+  background: rgba(50, 50, 50, 0.30);;
 }
 
 .work-container h3 {
@@ -23,7 +30,10 @@
   opacity: 0.7;
 }
 
-.work-container button {
+.work-container a {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   width: 200px;
   height: 50px;
   border: none;
@@ -36,6 +46,6 @@
   transition: ease 0.4s;
 }
 
-.work-container button:hover {
+.work-container a:hover {
   transform: scale(0.95);
 }

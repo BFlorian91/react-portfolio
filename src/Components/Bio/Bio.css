@@ -5,10 +5,9 @@
   margin: 0 0 40px 0;
 }
 
-.bio-container hr {
+.bio-container .separator {
   width: 25px;
   height: 5px;
-  background: rgba(900, 900, 900, 0.15);
   border: none;
   border-radius: 1px;
   margin: 5px 0 10px 0;
