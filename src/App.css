@@ -7,6 +7,7 @@
   text-decoration: none;
   cursor: default;
   /* color: whitesmoke; */
+  list-style-type: none;
 }
 
 body {

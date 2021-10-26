@@ -1,20 +1,20 @@
-import React, { useContext } from 'react';
-import { Link } from 'react-router-dom';
+import React, { useContext } from 'react'
+import { Link } from 'react-router-dom'
 
-import Card from '../../Components/Card/Card';
-import { ThemeContext } from '../../Context/ThemeContext';
+import Card from '../../Components/Card/Card'
+import { ThemeContext } from '../../Context/ThemeContext'
 
-import { datas } from '../../data/data.json';
+import { datas } from '../../data/data.json'
 
-import './Works.css';
+import './Works.css'
 
 export default function Works() {
-  const { themePreference } = useContext(ThemeContext);
+  const { themePreference } = useContext(ThemeContext)
 
   return (
-    <div className='works-container'>
+    <div className="works-container">
       <h1>Works</h1>
-      <div className='card-grid'>
+      <div className="card-grid">
         {datas.map((item, index) => {
           return (
             <Link
@@ -22,15 +22,23 @@ export default function Works() {
               className={themePreference.darkmode ? 'darkmode' : 'lightmode'}
               to={`/works/${item.id}-${item.title.toLowerCase()}`}
             >
-              <Card
-                image={item.image}
-                title={item.title}
-                description={item.description}
-              />
+              <div
+                className={
+                  themePreference.darkmode ? 'card darkmode' : 'card lightmode'
+                }
+              >
+                <img src={item.images[0]} />
+                <p>{item.title}</p>
+              </div>
+              {/* <Card
+                // image={item.image}
+                // title={item.title}
+                // description={item.description}
+              /> */}
             </Link>
-          );
+          )
         })}
       </div>
     </div>
-  );
+  )
 }

@@ -2,6 +2,7 @@
   display: flex;
   justify-content: space-around;
   flex-direction: column;
+  height: 60vh;
   animation: animate 1s ease-in-out;
 }
 
@@ -19,6 +20,40 @@
   grid-row-gap: 1.5rem;
   width: 100%;
   padding: 1rem;
+}
+
+.works-container .card {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 20px;
+  position: relative;
+  width: 300px;
+  height: 100px;
+  font-weight: bold;
+  font-size: 1.2em;
+  overflow: hidden;
+}
+
+.works-container .card img {
+  width: 100%;
+  position: absolute;
+  opacity: .3;
+  cursor: pointer;
+}
+
+.works-container .card.darkmode {
+  width: 100%;
+  text-shadow: 1px 0px 1px black;
+  background: #1f1d21;
+  color: #f0e7db;
+
+}
+
+.works-container .card.lightmode {
+  width: 100%;
+  background: #F0E7DB;
+  color: #1f1d21;
 }
 
 @keyframes animate {

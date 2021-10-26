@@ -3,27 +3,55 @@
     {
       "id": 0,
       "title": "Blog",
-      "image": "./images/1.png",
+      "images": [
+        "./images/blog-1.png",
+        "./images/blog-2.png"
+      ],
       "description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit.",
-      "url": "https://fbdevelop.netlify.app/"
+      "url": "https://fbdevelop.netlify.app/",
+      "stacks": [
+        "GatsbyJS",
+        "ReactJS",
+        "CSS",
+        "Markdown"
+      ]
     },
     {
       "id": 1,
       "title": "E-Shop",
-      "image": "./images/2.png",
-      "description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit."
+      "images": [
+        "./images/1-shop.png"
+      ],
+      "description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit.",
+      "stacks": [
+        "ReactJS",
+        "CSS"
+      ]
     },
     {
       "id": 2,
       "title": "Stats",
-      "image": "./images/3.png",
-      "description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit."
+      "images": [
+        "./images/1-dashboard.png",
+        "./images/2-dashboard.png"
+      ],
+      "description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit.",
+      "stacks": [
+        "ReactJS",
+        "CSS"
+      ]
     },
     {
       "id": 3,
       "title": "Timer",
-      "image": "./images/4.png",
-      "description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit."
+      "images": [
+        "./images/1-chrono.png"
+      ],
+      "description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit.",
+      "stacks": [
+        "ReactJS",
+        "CSS"
+      ]
     }
   ]
 }

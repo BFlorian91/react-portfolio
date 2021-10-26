@@ -1,24 +1,24 @@
-import React, { useContext } from 'react';
-import { Switch, Route } from 'react-router-dom';
+import React, { useContext } from 'react'
+import { Switch, Route } from 'react-router-dom'
 
-import ParticlesCustom from './Components/Particles/Particles';
-import { ThemeContext } from './Context/ThemeContext';
-import Workscase from './Pages/Workscase/Workscase';
-import Home from './Pages/Home/Home';
-import Header from './Components/Header/Header';
-import Works from './Pages/Works/Works';
-import Posts from './Pages/Posts/Posts';
+import ParticlesCustom from './Components/Particles/Particles'
+import { ThemeContext } from './Context/ThemeContext'
+import Workscase from './Pages/Workscase/Workscase'
+import Home from './Pages/Home/Home'
+import Header from './Components/Header/Header'
+import Works from './Pages/Works/Works'
+import Posts from './Pages/Posts/Posts'
 
-
-import './App.css';
-
+import './App.css'
 
 function App() {
   const { themePreference } = useContext(ThemeContext)
 
   return (
-    <div className={themePreference.darkmode ? "app darkmode" : "app lightmode"}>
-      <div className='particles'>
+    <div
+      className={themePreference.darkmode ? 'app darkmode' : 'app lightmode'}
+    >
+      <div className="particles">
         <ParticlesCustom />
       </div>
       <div className="global-container">
@@ -34,7 +34,7 @@ function App() {
         <footer>© 2021 Beaumont Florian. All Rights Reserved.</footer>
       </div>
     </div>
-  );
+  )
 }
 
-export default App;
+export default App
