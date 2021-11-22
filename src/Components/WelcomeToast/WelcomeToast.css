@@ -6,8 +6,6 @@
   width: 640px;
   height: 50px;
   border-radius: 8px;
-  /* overflow: hidden;
-  position: relative; */
 }
 
 .toast.darkmode {
@@ -23,28 +21,9 @@
   z-index: 1;
 }
 
-/* .toast::before {
-  content: '';
-  position: absolute;
-  width: 640px;
-  height: 50px;
-  background-color: #bb4f5d;
-  animation: animate 4s linear infinite;
-}
-
-.toast::after {
-  content: '';
-  position: absolute;
-  background: rgba(40, 40, 45, 1);
-  border-radius: 8px;
-  inset: 2px;
-}
-
-@keyframes animate {
-  0% {
-    transform: rotate(0deg);
+@media screen and (max-width: 500px) {
+  .toast {
+    width: 90vw;
+    font-size: small;
   }
-  100% {
-    transform: rotate(360deg);
-  }
-} */
+}

@@ -23,7 +23,7 @@
 }
 
 .quick-desc p {
-  font-size: 14px;
+  font-size: medium;
 }
 
 .pp-container {
@@ -38,6 +38,23 @@
 .pp-image {
   width: 110px;
   height: 110px;
-  /* border-radius: 50%; */
 }
 
+@media screen and (max-width: 500px) {
+  .my-self .contents {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .quick-desc {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding-bottom: 20px;
+  }
+
+  .quick-desc p {
+    font-size: smaller;
+  }
+}

@@ -9,9 +9,15 @@ export default function Work() {
   const { themePreference } = useContext(ThemeContext)
 
   return (
-    <div className='work-container'>
+    <div className="work-container">
       <h3>Work</h3>
-      <hr className={themePreference.darkmode ? 'separator darkmode' : 'separator lightmode'} />
+      <hr
+        className={
+          themePreference.darkmode
+            ? 'separator darkmode'
+            : 'separator lightmode'
+        }
+      />
       <p>
         {/* Takuya is a freelance and a full-stack developer based in Osaka with a
         passion for building digital services/stuff he wants. He has a knack for
@@ -19,10 +25,14 @@ export default function Work() {
         to solving real-life problems with code. When not online, he loves
         hanging out with his camera. Currently, he is living off of his own
         product called Inkdrop. */}
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloremque sequi mollitia, explicabo temporibus ea consequuntur! Impedit id itaque, qui earum vero omnis in nostrum quas magni magnam, consequuntur laborum necessitatibus?
-        Aliquid, laborum. Nisi laborum, modi totam officiis animi ex eos laudantium tenetur quam id praesentium ipsum minus repellendus. Optio omnis nesciunt adipisci earum aut quasi illum nobis sunt a quisquam!
+        Hey I’m a former student of <a className="information-42" href="https://42.fr/en/what-is-42/42-program-explained/" target="_blank" >42</a> school specializing in web application creation
+        as a front-end (at first), I’m based in Paris, and what I love most of
+        all is solving real-life problems with lines of code. When I’m not
+        online, I like going out with my camera or playing the piano.
       </p>
-      <Link to='/works'>My Porfolio {'>'}</Link>
+      <Link className="button-49" to="/works">
+        My Porfolio {'>'}
+      </Link>
     </div>
-  );
+  )
 }

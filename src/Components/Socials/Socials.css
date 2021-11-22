@@ -1,0 +1,20 @@
+socials-container {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  margin: 0 0 40px 0;
+}
+
+.socials-container p {
+  word-spacing: 4px;
+  line-height: 20px;
+  margin-left: 5px;
+  color: #BB4F5D;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.socials-container .ligne {
+  display: flex;
+  padding: 10px 0;
+}

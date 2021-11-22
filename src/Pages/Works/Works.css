@@ -1,8 +1,7 @@
 .works-container {
   display: flex;
-  justify-content: space-around;
   flex-direction: column;
-  height: 60vh;
+  height: 100vh;
   animation: animate 1s ease-in-out;
 }
 

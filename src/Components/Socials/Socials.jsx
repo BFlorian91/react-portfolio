@@ -6,12 +6,12 @@ import insta from './insta.svg';
 import github from './github.svg';
 import linkedin from './linkedin.svg';
 
-import './Sociaux.css';
+import './Socials.css';
 
-export default function Sociaux() {
+export default function Socials() {
   const { themePreference } = useContext(ThemeContext);
   return (
-    <div className='sociaux-container'>
+    <div className='socials-container'>
       <h3>On the web</h3>
       <hr
         className={
