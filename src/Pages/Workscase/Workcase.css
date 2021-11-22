@@ -67,3 +67,9 @@
 .workscase-img img {
   width: 100%;
 }
+
+@media screen and (max-width: 640px) {
+  .description {
+    padding: 30px 0;
+  }
+}

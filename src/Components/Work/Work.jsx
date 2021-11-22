@@ -1,9 +1,9 @@
-import React, { useContext } from 'react';
+import React, { useContext } from 'react'
 import { Link } from 'react-router-dom'
 
 import { ThemeContext } from '../../Context/ThemeContext'
 
-import './Work.css';
+import './Work.css'
 
 export default function Work() {
   const { themePreference } = useContext(ThemeContext)
@@ -19,16 +19,18 @@ export default function Work() {
         }
       />
       <p>
-        {/* Takuya is a freelance and a full-stack developer based in Osaka with a
-        passion for building digital services/stuff he wants. He has a knack for
-        all things launching products, from planning and designing all the way
-        to solving real-life problems with code. When not online, he loves
-        hanging out with his camera. Currently, he is living off of his own
-        product called Inkdrop. */}
-        Hey I’m a former student of <a className="information-42" href="https://42.fr/en/what-is-42/42-program-explained/" target="_blank" >42</a> school specializing in web application creation
-        as a front-end (at first), I’m based in Paris, and what I love most of
-        all is solving real-life problems with lines of code. When I’m not
-        online, I like going out with my camera or playing the piano.
+        Hey I’m a former student of{' '}
+        <a
+          className="information-42"
+          href="https://42.fr/en/what-is-42/42-program-explained/"
+          target="_blank"
+        >
+          42
+        </a>{' '}
+        school specializing in web application creation as a front-end (at
+        first), I’m based in Paris, and what I love most of all is solving
+        real-life problems with lines of code. When I’m not online, I like going
+        out with my camera or playing the piano.
       </p>
       <Link className="button-49" to="/works">
         My Porfolio {'>'}

@@ -53,14 +53,14 @@ export default function Workscase() {
           <div className="stack-used">
             <span className="badge">Stack</span>
               {datas[worksClicked].stacks.map((item, index) => {
-                return <div>{index ? ',' : ''} {item}</div>
+                return <div key={index}>{index ? ',' : ''} {item}</div>
               })}
           </div>
         </li>
       </ul>
       <div className="workscase-img">
-        {datas[worksClicked].images.map((item) => {
-          return <img src={process.env.PUBLIC_URL + `/` + item} alt="" />
+        {datas[worksClicked].images.map((item, index) => {
+          return <img key={index} src={process.env.PUBLIC_URL + `/` + item} alt="" />
         })}
       </div>
     </div>

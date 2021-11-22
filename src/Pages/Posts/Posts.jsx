@@ -17,9 +17,8 @@ export default function Posts() {
       <div className='card-grid'>
         {posts.map((item, index) => {
           return (
-            <a className={themePreference.darkmode ? 'darkmode' : 'lightmode'} href={item.urlPost} target="_blank" rel="noreferrer">
+            <a key={index} className={themePreference.darkmode ? 'darkmode' : 'lightmode'} href={item.urlPost} target="_blank" rel="noreferrer">
               <Card
-                key={index}
                 image={item.image}
                 title={item.title}
                 // description={item.description}
