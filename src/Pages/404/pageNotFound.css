@@ -1,0 +1,15 @@
+.page-not-found-container {
+  height: 100%;
+}
+
+.title-404 {
+  font-size: 30em;
+  font-family: 'Patrick Hand', cursive;
+  text-align: center;
+}
+
+.subtitle-404 {
+  font-size: 3em;
+  font-family: 'Patrick Hand', cursive;
+  text-align: center;
+}

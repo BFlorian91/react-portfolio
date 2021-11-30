@@ -1,16 +1,7 @@
 .works-container {
   display: flex;
   flex-direction: column;
-  height: 100vh;
-  animation: animate 1s ease-in-out;
 }
-/* TODO RESPONSIVE */
-/* DELETE THIS USE FOR TESTING */
-.works-container h1 {
-  margin-top: 100px;
-}
-/* /////////////////////////// */
-
 
 .card-grid {
   display: grid;
@@ -19,6 +10,7 @@
   grid-row-gap: 1.5rem;
   width: 100%;
   padding: 1rem;
+  margin-top: 100px;
 }
 
 .works-container .card {
@@ -28,7 +20,7 @@
   border-radius: 20px;
   position: relative;
   width: 300px;
-  height: 100px;
+  height: 200px;
   font-weight: bold;
   font-size: 1.2em;
   overflow: hidden;
@@ -55,16 +47,35 @@
   color: #1f1d21;
 }
 
+.vertical-slide {
+  opacity: 0;
+  animation: animate 0.3s linear;
+  animation-fill-mode: forwards;
+}
+
+.vertical-slide:nth-child(3) {
+  animation-delay: 150ms;
+}
+
+.vertical-slide:nth-child(4) {
+  animation-delay: 400ms;
+}
+
 @keyframes animate {
   0% {
     opacity: 0;
     transform: translateY(100%);
+  }
+  80% {
+    opacity: 0.4;
+    transform: translateY(1%);
   }
   100% {
     opacity: 1;
     transform: translateY(0);
   }
 }
+
 
 
 @media screen and (max-width: 640px) {

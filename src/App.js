@@ -4,6 +4,7 @@ import { Switch, Route } from 'react-router-dom'
 import ParticlesCustom from './Components/Particles/Particles'
 import { ThemeContext } from './Context/ThemeContext'
 import Workscase from './Pages/Workscase/Workscase'
+import PageNotFound from './Pages/404/PageNotFound'
 import Home from './Pages/Home/Home'
 import Header from './Components/Header/Header'
 import Works from './Pages/Works/Works'
@@ -29,6 +30,7 @@ function App() {
             <Route exact path="/works" component={Works} />
             <Route exact path="/works/:id" component={Workscase} />
             <Route exact path="/posts" component={Posts} />
+            <Route path="*" component={PageNotFound} />
           </Switch>
         </main>
         <footer>© 2021 Beaumont Florian. All Rights Reserved.</footer>

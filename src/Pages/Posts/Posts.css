@@ -2,7 +2,6 @@
   display: flex;
   justify-content: space-around;
   flex-direction: column;
-  animation: animate 1s ease-in-out;
 }
 
 .card-grid {
@@ -14,10 +13,28 @@
   padding: 1rem;
 }
 
+.vertical-slide {
+  opacity: 0;
+  animation: animate 0.3s linear;
+  animation-fill-mode: forwards;
+}
+
+.vertical-slide:nth-child(1) {
+  animation-delay: 150ms;
+}
+
+.vertical-slide:nth-child(2) {
+  animation-delay: 400ms;
+}
+
 @keyframes animate {
   0% {
     opacity: 0;
     transform: translateY(100%);
+  }
+  95% {
+    opacity: 0.4;
+    transform: translateY(1%);
   }
   100% {
     opacity: 1;

@@ -12,9 +12,9 @@ export default function Works() {
   const { themePreference } = useContext(ThemeContext)
 
   return (
-    <div className="works-container">
-      <h1>Works</h1>
-      <div className="card-grid">
+    <div className="works-container vertical-slide">
+      <h1 className="vertical-slide">Works</h1>
+      <div className="card-grid vertical-slide">
         {datas.map((item, index) => {
           return (
             <Link
@@ -24,17 +24,14 @@ export default function Works() {
             >
               <div
                 className={
-                  themePreference.darkmode ? 'card darkmode' : 'card lightmode'
+                  themePreference.darkmode
+                    ? 'card darkmode'
+                    : 'card lightmode'
                 }
               >
                 <img src={item.images[0]} />
                 <p>{item.title}</p>
               </div>
-              {/* <Card
-                // image={item.image}
-                // title={item.title}
-                // description={item.description}
-              /> */}
             </Link>
           )
         })}
