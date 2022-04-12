@@ -30,7 +30,7 @@ export default function Work() {
         school specializing in web application creation as a front-end (at
         first), I’m based in Paris, and what I love most of all is solving
         real-life problems with lines of code. When I’m not online, I like going
-        out with my camera or playing the piano.
+        out with my camera or doing music.
       </p>
       <Link className="button-49" to="/works">
         My Porfolio {'>'}

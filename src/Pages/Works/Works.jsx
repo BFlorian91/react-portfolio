@@ -1,7 +1,6 @@
 import React, { useContext } from 'react'
 import { Link } from 'react-router-dom'
 
-import Card from '../../Components/Card/Card'
 import { ThemeContext } from '../../Context/ThemeContext'
 
 import { datas } from '../../data/data.json'
@@ -16,6 +15,7 @@ export default function Works() {
       <h1 className="vertical-slide">Works</h1>
       <div className="card-grid vertical-slide">
         {datas.map((item, index) => {
+          console.log(item);
           return (
             <Link
               key={index}

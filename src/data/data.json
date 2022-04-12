@@ -7,7 +7,7 @@
         "./images/blog-1.png",
         "./images/blog-2.png"
       ],
-      "description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit.",
+      "description": "A little blog about programming, more for practicing than for posting. The main feature of this project is the tag filter",
       "url": "https://fbdevelop.netlify.app/",
       "stacks": [
         "GatsbyJS",
@@ -22,7 +22,7 @@
       "images": [
         "./images/1-shop.png"
       ],
-      "description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit.",
+      "description": "A project for learn how to make a basket",
       "stacks": [
         "ReactJS",
         "CSS"
@@ -35,7 +35,7 @@
         "./images/1-dashboard.png",
         "./images/2-dashboard.png"
       ],
-      "description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit.",
+      "description": "A little project for explore react-chart",
       "stacks": [
         "ReactJS",
         "CSS"
@@ -47,7 +47,7 @@
       "images": [
         "./images/1-chrono.png"
       ],
-      "description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit.",
+      "description": "Just a little time like pomodoro.",
       "stacks": [
         "ReactJS",
         "CSS"
