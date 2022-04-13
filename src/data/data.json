@@ -47,7 +47,7 @@
       "images": [
         "./images/1-chrono.png"
       ],
-      "description": "Just a little time like pomodoro.",
+      "description": "Just a little timer like pomodoro.",
       "stacks": [
         "ReactJS",
         "CSS"
