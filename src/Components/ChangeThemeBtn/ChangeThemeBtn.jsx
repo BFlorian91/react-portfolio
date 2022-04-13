@@ -20,7 +20,7 @@ export default function ChangeThemeBtn() {
   return (
     <div>
       {themePreference.darkmode ? (
-        <button onClick={() => dispatch({type: 'LIGHTMODE'})} className='btn light'>
+        <button onClick={toggleTheme} className='btn light'>
           <img src={sun} alt='light theme' />
         </button>
       ) : (
