@@ -48,7 +48,7 @@
         "./images/1-chrono.png"
       ],
       "description": "Just a little timer like pomodoro.",
-      "url": "chronopom.netlify.app",
+      "url": "https://chronopom.netlify.app/",
       "stacks": [
         "ReactJS",
         "CSS"
