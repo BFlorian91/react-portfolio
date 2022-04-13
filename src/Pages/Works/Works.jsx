@@ -15,7 +15,6 @@ export default function Works() {
       <h1 className="vertical-slide">Works</h1>
       <div className="card-grid vertical-slide">
         {datas.map((item, index) => {
-          console.log(item);
           return (
             <Link
               key={index}

@@ -31,6 +31,11 @@ const themeReducer = (state, action) => {
   }
 }
 
+/**
+ * It's a React component that takes in children and returns a context provider that has the theme
+ * preference and dispatch function as its value
+ * @returns The ThemeProvider component is being returned.
+ */
 export function ThemeProvider({ children }) {
   const [theme, dispatch] = useReducer(themeReducer, INITIAL_STATE)
   const themePreference = JSON.parse(localStorage.getItem("theme-preference"))

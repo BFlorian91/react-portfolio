@@ -12,7 +12,13 @@ export default function Bio() {
       className='bio-container'
     >
       <h3>Bio</h3>
-      <hr className={themePreference.darktheme ? 'separator darkmode' : 'separator lightmode'} />
+      <hr
+        className={
+          themePreference.darkmode
+            ? 'separator darkmode'
+            : 'separator lightmode'
+        }
+      />
       <div className='ligne ligne-1'>
         <p>
           <span>1991</span>Born near Paris, France.

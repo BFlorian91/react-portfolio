@@ -31,10 +31,7 @@ export default function Workscase() {
       <h1>{datas[worksClicked].title}</h1>
       <div className="description">
         <p>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Officiis
-          sequi, accusantium suscipit aliquid soluta quis porro, culpa quisquam
-          enim doloribus amet ea quod adipisci quae unde, ab ratione commodi
-          nulla.
+          {datas[worksClicked].description}
         </p>
       </div>
       <ul className="product-info">
@@ -46,7 +43,7 @@ export default function Workscase() {
             target="_blank"
             rel="noreferrer"
           >
-            {datas[worksClicked].url}
+            {datas[worksClicked].url ? datas[worksClicked].url : 'Not uploaded'}
           </a>
         </li>
         <li>

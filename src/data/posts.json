@@ -8,18 +8,6 @@
     },
     {
       "id": 2,
-      "title": "Hook: useContext",
-      "image": "",
-      "urlPost": "https://fbdevelop.netlify.app/remove-duplicate-element-js/"
-    },
-    {
-      "id": 3,
-      "title": "Sort, Split, Join Array",
-      "image": "",
-      "urlPost": "https://fbdevelop.netlify.app/remove-duplicate-element-js/"
-    },
-    {
-      "id": 4,
       "title": "Display an array in JSX",
       "image": "",
       "urlPost": "https://fbdevelop.netlify.app/display-jsx-array/"

@@ -31,13 +31,13 @@ export default function Socials() {
         </div>
       </a>
       <a
-        href='https://www.instagram.com/fb_visuals/'
+        href='https://www.instagram.com/flb__photography/'
         target='_blank'
         rel='noreferrer'
       >
         <div className='ligne'>
           <img width='22' src={insta} alt='instagram' />
-          <p>@fb_visuals</p>
+          <p>@flb__photography</p>
         </div>
       </a>
       <a href='https://github.com/BFlorian91' target='_blank' rel='noreferrer'>
