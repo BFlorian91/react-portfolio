@@ -1,18 +1,17 @@
-import React, { useContext } from 'react';
+import React, { useContext } from 'react'
 
-import { ThemeContext } from '../../Context/ThemeContext';
+import { ThemeContext } from '../../Context/ThemeContext'
 
-import sun from './icons8-soleil.svg';
-import moon from './moon.svg';
+import sun from './icons8-soleil.svg'
+import moon from './moon.svg'
 
-import './ChangeThemeBtn.css';
+import './ChangeThemeBtn.css'
 
 export default function ChangeThemeBtn() {
-
- const { themePreference, dispatch } = useContext(ThemeContext)
+  const { themePreference, dispatch } = useContext(ThemeContext)
 
   const toggleTheme = () => {
-     themePreference.darkmode
+    themePreference.darkmode
       ? dispatch({ type: 'LIGHTMODE' })
       : dispatch({ type: 'DARKMODE' })
   }
@@ -20,14 +19,14 @@ export default function ChangeThemeBtn() {
   return (
     <div>
       {themePreference.darkmode ? (
-        <button onClick={toggleTheme} className='btn light'>
-          <img src={sun} alt='light theme' />
+        <button onClick={toggleTheme} className="btn light">
+          <img src={sun} alt="light theme" />
         </button>
       ) : (
-        <button onClick={toggleTheme} className='btn dark'>
-          <img width='25' src={moon} alt='dark theme' />
+        <button onClick={toggleTheme} className="btn dark">
+          <img width="25" src={moon} alt="dark theme" />
         </button>
       )}
     </div>
-  );
+  )
 }

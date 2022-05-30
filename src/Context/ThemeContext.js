@@ -38,7 +38,7 @@ const themeReducer = (state, action) => {
  */
 export function ThemeProvider({ children }) {
   const [theme, dispatch] = useReducer(themeReducer, INITIAL_STATE)
-  const themePreference = JSON.parse(localStorage.getItem("theme-preference"))
+  const themePreference = theme
 
   localStorage.setItem("theme-preference", JSON.stringify(theme))
 
