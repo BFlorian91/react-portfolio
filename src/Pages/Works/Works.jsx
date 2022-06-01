@@ -11,24 +11,28 @@ export default function Works() {
   const { themePreference } = useContext(ThemeContext)
 
   return (
-    <div className="works-container vertical-slide">
-      <h1 className="vertical-slide">Works</h1>
-      <div className="card-grid vertical-slide">
+    <div className="works">
+      <h1 className="works__title">Works</h1>
+      <div className="works__card--grid">
         {datas.map((item, index) => {
           return (
             <Link
               key={index}
-              className={themePreference.darkmode ? 'darkmode' : 'lightmode'}
+              className={
+                themePreference.darkmode
+                  ? 'darkmode works__card--vertical-slide'
+                  : 'lightmode'
+              }
               to={`/works/${item.id}-${item.title.toLowerCase()}`}
             >
               <div
                 className={
                   themePreference.darkmode
-                    ? 'card darkmode'
-                    : 'card lightmode'
+                    ? 'works__card darkmode'
+                    : 'works__card lightmode'
                 }
               >
-                <img src={item.images[0]} />
+                <img className="works__card--img" src={item.images[0]} />
                 <p>{item.title}</p>
               </div>
             </Link>
