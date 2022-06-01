@@ -30,14 +30,14 @@
   color: whitesmoke;
   cursor: pointer;
 
-  transition: ease 0.4s;
   box-shadow: rgba(187, 79, 95, 1) 0px 2px 3px -1px,
     rgba(0, 0, 0, 0.3) 0px 1px 1px -1px;
+  transition: all .2s;
 }
 
 .work-container .button-49:hover {
-  box-shadow: rgba(80, 19, 19, 0.5) -3px -3px 4px 0px inset,
-    rgba(55, 15, 15, 0.5) 3px 3px 4px 1px inset;
+  background: #8b3b46;
+  transition: all .2s ease-in-out;
 }
 
 .information-42 {

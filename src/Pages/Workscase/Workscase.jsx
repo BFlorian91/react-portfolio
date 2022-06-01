@@ -16,8 +16,8 @@ export default function Workscase() {
   )
 
   return (
-    <div className="workscase-container">
-      <h3>
+    <div className="workscase">
+      <h3 className='workscase__path--title'>
         <Link
           className={
             themePreference.darkmode ? 'darkmode-pink' : 'lightmode-blue'
@@ -29,16 +29,16 @@ export default function Workscase() {
         {`> ${datas[worksClicked].title}`}
       </h3>
       <h1>{datas[worksClicked].title}</h1>
-      <div className="description">
+      <div className="workcase__description">
         <p>
           {datas[worksClicked].description}
         </p>
       </div>
-      <ul className="product-info">
+      <ul className="workcase__product--info">
         <li>
           <span className="badge">Website</span>
           <a
-            className="url-website"
+            className="workcase__url--website"
             href={datas[worksClicked].url}
             target="_blank"
             rel="noreferrer"

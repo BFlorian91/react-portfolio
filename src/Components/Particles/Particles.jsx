@@ -25,11 +25,11 @@ export default function ParticlesCustom() {
             detectsOn: 'canvas',
             events: {
               onClick: {
-                enable: true,
+                enable: false,
                 mode: 'push',
               },
               onHover: {
-                enable: true,
+                enable: false,
                 mode: 'repulse',
               },
               resize: true,
