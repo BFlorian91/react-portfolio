@@ -2,22 +2,27 @@ nav {
   display: flex;
   justify-content: space-around;
   width: 8em;
+  user-select: none;
 }
 
 .is-active.darkmode {
-  color: #E45AB0 !important;
+  color: #e45ab0 !important;
+  font-weight: bold;
 }
 
 .is-active.lightmode {
-  color: #87A5E7 !important;
+  color: #87a5e7 !important;
+  font-weight: bold;
 }
 
 a.lightmode {
   color: #212121;
   cursor: pointer;
+  font-weight: bold;
 }
 
 a.darkmode {
   color: whitesmoke;
   cursor: pointer;
+  font-weight: bold;
 }

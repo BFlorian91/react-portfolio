@@ -11,9 +11,9 @@ export default function Posts() {
   const { themePreference } = useContext(ThemeContext)
 
   return (
-    <div className="posts-container">
-      <h1 className='vertical-slide'>Posts</h1>
-      <div className="card-grid vertical-slide">
+    <div className="posts">
+      <h1 className='posts__title posts__vertical-slide'>Posts</h1>
+      <div className="posts__card--grid posts__vertical-slide">
         {posts.map((item, index) => {
           return (
             <a

@@ -26,20 +26,18 @@
   border-radius: 5px;
   margin: 20px auto;
   font-size: 20px;
-  background: #BB4F5D;
+  background: #bb4f5d;
   color: whitesmoke;
   cursor: pointer;
 
   transition: ease 0.4s;
   box-shadow: rgba(187, 79, 95, 1) 0px 2px 3px -1px,
-  rgba(0, 0, 0, 0.3) 0px 1px 1px -1px;
-
-
+    rgba(0, 0, 0, 0.3) 0px 1px 1px -1px;
 }
 
 .work-container .button-49:hover {
   box-shadow: rgba(80, 19, 19, 0.5) -3px -3px 4px 0px inset,
-  rgba(55, 15, 15, 0.5) 3px 3px 4px 1px inset;
+    rgba(55, 15, 15, 0.5) 3px 3px 4px 1px inset;
 }
 
 .information-42 {
@@ -47,7 +45,9 @@
   text-decoration: none;
 }
 
-.information-42:visited, .information-42:hover, .information-42 {
+.information-42:visited,
+.information-42:hover,
+.information-42 {
   color: inherit;
 }
 

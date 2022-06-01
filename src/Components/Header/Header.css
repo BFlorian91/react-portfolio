@@ -8,6 +8,7 @@
 .left-part p {
   cursor: pointer;
   font-weight: bold;
+  user-select: none;
 }
 
 .header {

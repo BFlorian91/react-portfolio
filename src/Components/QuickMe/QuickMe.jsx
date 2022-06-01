@@ -8,7 +8,7 @@ import './QuickMe.css';
 export default function QuickMe() {
 
   return (
-    <div className="container-quickme">
+    <div className="quickme">
       <div className='top-image'></div>
       <div className='my-self'>
         <div className='toast'>

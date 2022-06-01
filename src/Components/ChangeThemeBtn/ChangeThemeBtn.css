@@ -9,6 +9,7 @@
   border-radius: 20%;
   cursor: pointer;
   transition: ease 0.4s;
+  user-select: none;
 }
 
 .btn.light {

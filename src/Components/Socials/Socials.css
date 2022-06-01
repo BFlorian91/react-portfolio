@@ -1,11 +1,11 @@
-socials-container {
+socials {
   display: flex;
   justify-content: center;
   flex-direction: column;
   margin: 0 0 40px 0;
 }
 
-.socials-container p {
+.socials p {
   word-spacing: 4px;
   line-height: 20px;
   margin-left: 5px;
@@ -14,7 +14,12 @@ socials-container {
   cursor: pointer;
 }
 
-.socials-container .ligne {
+.socials__media {
+  display: flex;
+  justify-content: space-between;
+}
+
+.socials .ligne {
   display: flex;
   padding: 10px 0;
 }

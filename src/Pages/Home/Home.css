@@ -6,6 +6,7 @@
 
 .sections:nth-child(1) {
   animation-delay: 0;
+  margin-top: 30px;
 }
 
 .sections:nth-child(2) {
