@@ -12,13 +12,17 @@ export default function Posts() {
 
   return (
     <div className="posts">
-      <h1 className='posts__title posts__vertical-slide'>Posts</h1>
-      <div className="posts__card--grid posts__vertical-slide">
+      <h1 className="posts__title">Posts</h1>
+      <div className="posts__card--grid">
         {posts.map((item, index) => {
           return (
             <a
               key={index}
-              className={themePreference.darkmode ? 'darkmode' : 'lightmode'}
+              className={
+                themePreference.darkmode
+                  ? 'darkmode posts__card--vertical-slide'
+                  : 'lightmode posts__card--vertical-slide'
+              }
               href={item.urlPost}
               target="_blank"
               rel="noreferrer"

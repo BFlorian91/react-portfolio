@@ -4,20 +4,21 @@
   z-index: 2;
 }
 
-.top-image {
+.quickme__image {
   height: 150px;
 }
 
-.my-self {
+.quickme__my-self {
   display: flex;
   flex-direction: column;
+  /* padding-bottom: 15px; */
 }
 
 .toast {
   margin: 15px 0;
 }
 
-.my-self .contents {
+.quickme__my-self .contents {
   display: flex;
   justify-content: space-between;
 
@@ -42,7 +43,7 @@
   height: 110px;
 }
 
-@media screen and (max-width: 500px) {
+@media screen and (max-width: 640px) {
   .my-self .contents {
     flex-direction: column;
     align-items: center;

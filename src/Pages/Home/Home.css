@@ -1,3 +1,7 @@
+.home {
+  overflow: hidden;
+}
+
 .sections {
   opacity: 0;
   animation: animate 0.3s linear;
@@ -6,7 +10,7 @@
 
 .sections:nth-child(1) {
   animation-delay: 0;
-  margin-top: 30px;
+  margin-top: 15px;
 }
 
 .sections:nth-child(2) {
@@ -38,3 +42,10 @@
     opacity: 1;
   }
 }
+
+@media screen and (max-width: 640px) {
+  .sections:nth-child(1) {
+    margin-top: 0;
+  }
+}
+  

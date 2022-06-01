@@ -1,6 +1,7 @@
 .works {
   display: flex;
   flex-direction: column;
+  overflow: hidden;
 }
 
 .works__title {

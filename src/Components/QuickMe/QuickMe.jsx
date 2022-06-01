@@ -9,8 +9,8 @@ export default function QuickMe() {
 
   return (
     <div className="quickme">
-      <div className='top-image'></div>
-      <div className='my-self'>
+      <div className='quickme__image'></div>
+      <div className='quickme__my-self'>
         <div className='toast'>
           <WelcomeToast />
         </div>
