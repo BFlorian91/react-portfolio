@@ -23,3 +23,11 @@ socials {
   display: flex;
   padding: 10px 0;
 }
+
+@media screen and (max-width: 640px) {
+  .socials__media {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+}

@@ -17,7 +17,6 @@ body {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   max-height: 100vh;
-  overflow: hidden;
 }
 
 a.lightmode {
@@ -96,7 +95,7 @@ footer {
   background: rgba(50, 50, 50, 0.3);
 }
 
-@media screen and (max-width: 500px) {
+@media screen and (max-width: 640px) {
   .global-container {
     padding: 0 20px;
   }
