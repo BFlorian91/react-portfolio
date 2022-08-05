@@ -10,7 +10,6 @@ import './Workcase.css'
 export default function Workscase() {
   const { id } = useParams()
   const { themePreference } = useContext(ThemeContext)
-
   const worksClicked = datas.findIndex(
     (obj) => `${obj.id}-${obj.title.toLowerCase()}` === id
   )

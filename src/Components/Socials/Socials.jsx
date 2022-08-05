@@ -32,7 +32,7 @@ export default function Socials() {
           </div>
         </a>
         <a
-          href="https://www.instagram.com/flb__photography/"
+          href="https://www.instagram.com/fb.visual/"
           target="_blank"
           rel="noreferrer"
         >
