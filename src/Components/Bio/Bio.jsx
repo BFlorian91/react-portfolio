@@ -38,7 +38,7 @@ export default function Bio() {
       </div>
       <div className='ligne ligne-4'>
         <p>
-          <span>2020 to present</span>Working at home using mostly Javascript,
+          <span>2021 to present</span>Working at home using mostly Javascript,
           ReactJS 🏡
         </p>
       </div>
