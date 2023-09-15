@@ -37,7 +37,7 @@ export default function Workscase() {
         <li>
           <span className="badge">Website</span>
           <a
-            className="workcase__url--website"
+            className="workcase__url--website url-website"
             href={datas[worksClicked].url}
             target="_blank"
             rel="noreferrer"
