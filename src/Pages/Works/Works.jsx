@@ -14,7 +14,6 @@ export default function Works() {
 
   return (
     <div className="works">
-      <h1 className="works__title">Works</h1>
       <div className="works__card--grid">
         {datas.map((item, index) => {
           return (
@@ -23,7 +22,7 @@ export default function Works() {
               className={
                 themePreference.darkmode
                   ? 'darkmode works__card--vertical-slide'
-                  : 'lightmode'
+                  : 'lightmode works__card--vertical-slide'
               }
               to={`/works/${item.id}-${item.title.toLowerCase()}`}
             >
@@ -34,14 +33,18 @@ export default function Works() {
                     : 'works__card lightmode'
                 }
               >
-                <LazyLoadImage
-                  className="works__card--img"
+                <img
+                  className={
+                    themePreference.darkmode
+                      ? 'works__card--img'
+                      : 'works__card--img lightmode'
+                  }
                   effect="blur"
                   src={item.images[0]}
                   alt={item.images_credentials}
                 />
-                <p>{item.title}</p>
               </div>
+              <p className="works__card--title">{item.title}</p>
             </Link>
           )
         })}

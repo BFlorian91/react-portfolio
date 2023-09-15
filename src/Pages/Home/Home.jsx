@@ -1,5 +1,3 @@
-import React from 'react'
-
 import QuickMe from '../../Components/QuickMe/QuickMe'
 import Work from '../../Components/Work/Work'
 import Bio from '../../Components/Bio/Bio'
@@ -10,22 +8,22 @@ import './Home.css'
 
 export default function Home() {
   return (
-    <div className="home">
-      <div className="sections">
+    <main className="home">
+      <section className="sections__annimation">
         <QuickMe />
-      </div>
-      <div className="sections">
+      </section>
+      <section className="sections__annimation">
         <Work />
-      </div>
-      <div className="sections">
+      </section>
+      <section className="sections__annimation">
         <Bio />
-      </div>
-      <div className="sections">
+      </section>
+      <section className="sections__annimation">
         <Hobbies />
-      </div>
-      <div className="sections">
+      </section>
+      <section className="sections__annimation">
         <Socials />
-      </div>
-    </div>
+      </section>
+    </main>
   )
 }

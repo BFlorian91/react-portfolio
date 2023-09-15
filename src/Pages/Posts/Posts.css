@@ -2,11 +2,7 @@
   display: flex;
   justify-content: space-around;
   flex-direction: column;
-}
-
-.posts__title {
-  padding-top: 30px;
-  user-select: none;
+  padding-top: 60px;
 }
 
 .posts__card--grid {
@@ -21,11 +17,12 @@
   user-select: none;
 }
 
-/* .posts__card--horizontal-slide {
+.posts__card--horizontal-slide {
   opacity: 0;
-  animation: animateX 0.3s linear;
-  animation-fill-mode: forwards;
-} */
+  animation: 
+    animatePosition 1s cubic-bezier(0.1, 0.9, 0.2, 1),
+    animateOpacity 1s linear forwards;
+}
 
 .posts__card--vertical-slide {
   opacity: 0;

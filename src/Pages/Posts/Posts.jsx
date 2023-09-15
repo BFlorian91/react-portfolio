@@ -12,7 +12,6 @@ export default function Posts() {
 
   return (
     <div className="posts">
-      <h1 className="posts__title">Posts</h1>
       <div className="posts__card--grid">
         {posts.map((item, index) => {
           return (

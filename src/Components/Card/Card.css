@@ -35,16 +35,6 @@
   transition: all 0.4s ease-in-out;
 }
 
-/* .card-image img {
-  position: absolute;
-  top: 85%;
-  left: 50%;
-
-  width: 150%;
-
-  transform: translate(-50%, -50%);
-} */
-
 .card-body {
   height: 150px;
 
