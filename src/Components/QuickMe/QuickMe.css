@@ -30,9 +30,10 @@
 }
 
 .pp-container {
+  display: block;
   position: relative;
-  width: 105px;
-  height: 105px;
+  width: auto;
+  height: auto;
   border: 2px solid rgba(255, 255, 255, 0.80);
   border-radius: 50%;
   overflow: hidden;

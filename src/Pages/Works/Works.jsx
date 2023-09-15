@@ -1,5 +1,7 @@
 import React, { useContext } from 'react'
 import { Link } from 'react-router-dom'
+import { LazyLoadImage } from 'react-lazy-load-image-component'
+import 'react-lazy-load-image-component/src/effects/blur.css'
 
 import { ThemeContext } from '../../Context/ThemeContext'
 
@@ -32,7 +34,12 @@ export default function Works() {
                     : 'works__card lightmode'
                 }
               >
-                <img className="works__card--img" src={item.images[0]} />
+                <LazyLoadImage
+                  className="works__card--img"
+                  effect="blur"
+                  src={item.images[0]}
+                  alt={item.images_credentials}
+                />
                 <p>{item.title}</p>
               </div>
             </Link>

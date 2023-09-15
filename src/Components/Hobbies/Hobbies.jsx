@@ -10,7 +10,7 @@ export default function Hobbies() {
     <div className='hobbies-container'>
       <h3>What I ❤️</h3>
       <hr className={themePreference.darkmode ? 'separator darkmode' : 'separator lightmode'} />
-      <p>Music, Photography, Astronomy, Learn about everything.</p>
+      <p>Photography, Literature, Music, Learn about everything.</p>
     </div>
   );
 }

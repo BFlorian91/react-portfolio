@@ -22,7 +22,7 @@ export default function Header() {
       <header className={navBlur ? 'header active' : 'header'}>
         <div className='left-part'>
           <Link className={themePreference.darkmode ? 'darkmode' : 'lightmode'} to='/'>
-            <p>Florian Beaumont</p>
+            <p className='logo'>FB</p>
           </Link>
           <Navbar />
         </div>

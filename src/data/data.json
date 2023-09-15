@@ -3,69 +3,35 @@
     {
       "id": 0,
       "title": "Blog",
-      "images": [
-        "./images/blog-1.png",
-        "./images/blog-2.png"
-      ],
+      "images": ["./images/blog-1.png", "./images/blog-2.png"],
       "description": "A little blog about programming, more for practicing than for posting. The main feature of this project is the tag filter",
       "url": "https://fbdevelop.netlify.app/",
-      "stacks": [
-        "GatsbyJS",
-        "ReactJS",
-        "CSS",
-        "Markdown"
-      ]
+      "stacks": ["GatsbyJS", "ReactJS", "CSS", "Markdown"]
     },
     {
       "id": 1,
-      "title": "E-Shop",
-      "images": [
-        "./images/1-shop.png"
-      ],
-      "description": "A project for learn how to make a basket with Redux",
-      "stacks": [
-        "ReactJS",
-        "CSS"
-      ]
+      "title": "E-commerce",
+      "images": ["./images/no-image.jpeg"],
+      "images_credentials": "Photo by Growtika on Unsplash",
+      "description": "Conceived in just 48 hours during a coding rush at École 42, this PHP e-commerce website exemplifies effective time management and practical development skills. Equipped with basic functionalities like user registration, login, and logout, the site employs a Model-View-Controller (MVC) architecture. Despite the time constraints and lack of frameworks, the website provides a basic but functional e-commerce solution.",
+      "url": "https://github.com/BFlorian91/e_commerce/tree/master",
+      "stacks": ["PHP"]
     },
     {
       "id": 2,
-      "title": "Stats",
-      "images": [
-        "./images/1-dashboard.png",
-        "./images/2-dashboard.png"
-      ],
-      "description": "A little project for explore react-chart",
-      "stacks": [
-        "ReactJS",
-        "CSS"
-      ]
+      "title": "Pomodoro",
+      "images": ["./images/1-chrono.png"],
+      "description": "Just a little timer like pomodoro.",
+      "url": "https://chronopom.netlify.app/",
+      "stacks": ["ReactJS", "CSS"]
     },
     {
       "id": 3,
-      "title": "Timer",
-      "images": [
-        "./images/1-chrono.png"
-      ],
-      "description": "Just a little timer like pomodoro.",
-      "url": "https://chronopom.netlify.app/",
-      "stacks": [
-        "ReactJS",
-        "CSS"
-      ]
-    }
-    ,
-    {
-      "id": 4,
       "title": "Mobile App's",
-      "images": [
-        "./images/fb_develops.png"
-      ],
+      "images": ["./images/fb_develops.png"],
       "description": "6 littles app's with the framework flutter. Many subjects were dealt with, including how to set up a Provider, audio player, video player, fetching datas, geolocating, and some other stuff",
       "url": "https://www.instagram.com/fb_develop/",
-      "stacks": [
-        "Flutter"
-      ]
+      "stacks": ["Flutter"]
     }
   ]
 }

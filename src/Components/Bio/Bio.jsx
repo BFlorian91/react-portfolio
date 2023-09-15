@@ -38,8 +38,7 @@ export default function Bio() {
       </div>
       <div className='ligne ligne-4'>
         <p>
-          <span>2021 to present</span>Working at home using mostly Javascript,
-          ReactJS 🏡
+          <span>2021 - 2022</span> Mentor at a Flutter Bootcamp
         </p>
       </div>
     </div>
