@@ -4,13 +4,39 @@
       "id": 1,
       "title": "Remove array duplicates",
       "image": "",
-      "urlPost": "https://fbdevelop.netlify.app/remove-duplicate-element-js/"
+      "urlPost": "https://fbdevelop.netlify.app/remove-duplicate-element-js/",
+      "tag": ["Javascript"]
     },
     {
       "id": 2,
       "title": "Display an array in JSX",
       "image": "",
-      "urlPost": "https://fbdevelop.netlify.app/display-jsx-array/"
+      "urlPost": "https://fbdevelop.netlify.app/display-jsx-array/",
+      "tag": ["Javascript"]
+    },    {
+      "id": 3,
+      "title": "Themes with Provider",
+      "image": "",
+      "urlPost": "https://fbdevelop.netlify.app/themes-with-provider/",
+      "tag": ["Flutter"]
+    },    {
+      "id": 4,
+      "title": "Array feature at",
+      "image": "",
+      "urlPost": "https://fbdevelop.netlify.app/array-feature-at/",
+      "tag": ["Javascript"]
+    },    {
+      "id": 5,
+      "title": "Stateful vs Stateless widget",
+      "image": "",
+      "urlPost": "https://fbdevelop.netlify.app/stateful-vs-stateless/",
+      "tag": ["Flutter"]
+    },    {
+      "id": 6,
+      "title": "Routing system in Flutter",
+      "image": "",
+      "urlPost": "https://fbdevelop.netlify.app/routes-flutter/",
+      "tag": ["Flutter"]
     }
   ]
 }

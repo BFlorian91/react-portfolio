@@ -25,6 +25,7 @@ body {
   -moz-osx-font-smoothing: grayscale;
   max-height: 100vh;
   overflow-y: scroll;
+  /* overscroll-behavior: none; */
 }
 
 /* Scroll darkmode */
