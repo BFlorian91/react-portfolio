@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Patrick+Hand&display=swap');
 
 html {
-  --scrollbarBG: #092c3d;
+  --scrollbarBG: #1F1D21;
   --thumbBG: #6c2c2c;
 
   overflow-y: auto;

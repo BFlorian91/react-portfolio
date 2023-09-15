@@ -33,6 +33,9 @@ export default function Works() {
                     : 'works__card lightmode'
                 }
               >
+                <div className="works__card--bottom">
+                  <p className="works__card--title">{item.title}</p>
+                </div>
                 <img
                   className={
                     themePreference.darkmode
@@ -44,7 +47,6 @@ export default function Works() {
                   alt={item.images_credentials}
                 />
               </div>
-              <p className="works__card--title">{item.title}</p>
             </Link>
           )
         })}
