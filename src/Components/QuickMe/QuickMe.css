@@ -24,6 +24,10 @@
 
 }
 
+.quick-desc h1 {
+  font-family: 'Mooli', sans-serif;
+}
+
 .quick-desc p {
   font-size: medium;
   padding-top: 10px;

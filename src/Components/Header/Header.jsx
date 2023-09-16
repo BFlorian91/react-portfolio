@@ -12,11 +12,12 @@ export default function Header() {
   
   const { themePreference } = useContext(ThemeContext)
 
-   const blurNavbar = () => {
+  const blurNavbar = () => {
+     console.log('blurNavbar is called');
      window.scrollY >= 30 ? setNavBlur(true) : setNavBlur(false);
    };
 
-   window.addEventListener('scroll', blurNavbar);
+  window.addEventListener('scroll', blurNavbar);
 
   return (
       <header className={navBlur ? 'header active' : 'header'}>
